@@ -51,31 +51,35 @@ pip install -e .[dev]
 ### 🐍 Python usage:
 
 ```python
+from insert_tools.runner import InsertConfig, run_insert
 
-from insert_tools.pipeline import InsertPipeline
-from insert_tools.sink.clickhouse import ClickhouseSink
-
-pipeline = InsertPipeline(
+config = InsertConfig(
+    host="localhost",
+    database="default",
+    target_table="my_table",
     select_sql="SELECT * FROM source_table",
-    sink=ClickhouseSink(
-        host="localhost",
-        database="default",
-        target_table="my_table",
-        user="default",
-        password="admin123",
-    ),
+    user="default",
+    password="admin123",
     allow_type_cast=True,
-    strict_column_match=True,
+    strict_column_match=True
 )
 
-pipeline.run()
+run_insert(config)
 ```
 
 ### 🖥️ CLI usage:
 
 ```bash
-python -m insert_tools.cli \
-  --config path/to/config.yaml \
+insert-tools \
+  --host localhost \
+  --port 8123 \
+  --user default \
+  --password admin123 \
+  --database default \
+  --target_table my_table \
+  --select_sql "SELECT * FROM source_table" \
+  --allow_type_cast \
+  --strict \
   --dry-run \
   --verbose
 ```
