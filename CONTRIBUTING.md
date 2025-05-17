@@ -1,76 +1,103 @@
-# Contributing to insert-tools
+# Contributing to Insert Tools
 
-Thanks for your interest in contributing! We welcome all contributions — bug reports, feature suggestions, code improvements, documentation, and more.
+🎉 Thanks for taking the time to contribute to **insert-tools**!
 
-## How to Contribute
+We welcome contributions of all kinds — new features, bug fixes, documentation, tests, or feedback. Here's how to get started.
 
-### 1. Fork the Repository
+---
 
-Click the "Fork" button in the top right corner of the [repo](https://github.com/castengine/insert-tools).
+## 🛠️ Setting up the project locally
 
-### 2. Clone Your Fork
+1. **Fork the repository** on GitHub
+2. Clone your fork:
+
+   ```bash
+   git clone https://github.com/your-username/insert-tools.git
+   cd insert-tools
+   ```
+3. **Install dependencies**:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. **Try the CLI**:
+
+   ```bash
+   python clickhouse_insert/cli.py --help
+   ```
+
+---
+
+## 📁 Project structure
+
+* `clickhouse_insert/` – main CLI logic and insert functionality
+* `tests/` – unit tests
+* `examples/` – example configs or use cases
+* `README.md` – overview and usage instructions
+
+---
+
+## 🧪 Running tests
+
+We use `pytest` for testing:
 
 ```bash
-git clone https://github.com/yourusername/insert-tools.git
-cd insert-tools
+pytest tests/
 ```
 
-### 3. Create a Feature Branch
-
-```bash
-git checkout -b feature/your-feature-name
-```
-
-### 4. Make Changes and Commit
-
-Make your changes, and commit them:
-
-```bash
-git add .
-git commit -m "Add a clear message about what you changed"
-```
-
-### 5. Push to GitHub
-
-```bash
-git push origin feature/your-feature-name
-```
-
-### 6. Create a Pull Request
-
-Go to your forked repository, click "New Pull Request", and follow the instructions.
+Make sure your feature or fix includes a test case if applicable.
 
 ---
 
-## 🐛 Reporting Bugs
+## 💬 Making changes
 
-- Use GitHub [Issues](https://github.com/castengine/insert-tools/issues)
-- Please provide steps to reproduce, expected vs actual behavior, and environment info (OS, Python version, etc.)
+1. Create a new branch:
+
+   ```bash
+   git checkout -b your-feature-name
+   ```
+
+2. Make your changes
+
+3. Commit your work:
+
+   ```bash
+   git commit -m "feat: short description of your change"
+   ```
+
+   Example prefixes:
+
+   * `feat:` – new feature
+   * `fix:` – bug fix
+   * `test:` – test related changes
+   * `docs:` – documentation only
+
+4. Push and open a pull request:
+
+   ```bash
+   git push origin your-feature-name
+   ```
 
 ---
 
-## 💡 Feature Suggestions
+## ✨ Suggesting features or reporting issues
 
-Open an issue and label it with `enhancement`. Describe:
-- What problem this feature solves
-- How it should work
+We love ideas! Feel free to [open an issue](https://github.com/castengine/insert-tools/issues) for:
 
----
-
-## 📋 Code Style
-
-- Use `black` or `isort` for formatting
-- Keep functions small and clear
-- Write docstrings and comments for clarity
+* Feature requests
+* Bugs
+* Usability suggestions
 
 ---
 
-## ✅ Checklist Before Submitting
+## ✅ Code of Conduct
 
-- [ ] Code compiles / runs without error
-- [ ] Tests pass (if applicable)
-- [ ] Includes documentation or examples (if needed)
+This project follows a [Code of Conduct](./CODE_OF_CONDUCT.md). By participating, you agree to uphold these standards.
 
 ---
 
-Thank you for contributing 🙏
+## 📫 Contact
+
+For questions or discussions, open a GitHub issue or reach out via Discussions tab.
+
+Happy coding! 🚀
