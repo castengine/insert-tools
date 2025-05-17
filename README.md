@@ -4,7 +4,8 @@
 [![Python Versions](https://img.shields.io/pypi/pyversions/insert-tools)](https://pypi.org/project/insert-tools/)
 [![Downloads](https://img.shields.io/pypi/dm/insert-tools)](https://pypi.org/project/insert-tools/)
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/castengine/insert-tools/python-ci.yml?branch=main)](https://github.com/castengine/insert-tools/actions)
-[![License](https://img.shields.io/github/license/castengine/insert-tools)](https://github.com/castengine/insert-tools/blob/main/LICENSE_NONCOMMERCIAL.md)
+[![License: Non-commercial](https://img.shields.io/badge/license-Non--Commercial-blue)](https://github.com/castengine/insert-tools/blob/main/LICENSE_NONCOMMERCIAL.md)
+[![License: Commercial](https://img.shields.io/badge/license-Commercial--available-orange)](https://github.com/castengine/insert-tools/blob/main/LICENSE_COMMERCIAL.md)
 [![Last commit](https://img.shields.io/github/last-commit/castengine/insert-tools)](https://github.com/castengine/insert-tools/commits)
 [![Stars](https://img.shields.io/github/stars/castengine/insert-tools?style=social)](https://github.com/castengine/insert-tools)
 
