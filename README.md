@@ -51,23 +51,21 @@ pip install -e .[dev]
 ### 🐍 Python usage:
 
 ```python
-python
-Копировать
-Редактировать
+
 from insert_tools.pipeline import InsertPipeline
 from insert_tools.sink.clickhouse import ClickhouseSink
 
 pipeline = InsertPipeline(
-select_sql="SELECT * FROM source_table",
-sink=ClickhouseSink(
-host="localhost",
-database="default",
-target_table="my_table",
-user="default",
-password="admin123",
-),
-allow_type_cast=True,
-strict_column_match=True,
+    select_sql="SELECT * FROM source_table",
+    sink=ClickhouseSink(
+        host="localhost",
+        database="default",
+        target_table="my_table",
+        user="default",
+        password="admin123",
+    ),
+    allow_type_cast=True,
+    strict_column_match=True,
 )
 
 pipeline.run()
