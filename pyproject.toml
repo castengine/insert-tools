@@ -1,17 +1,28 @@
 [project]
 name = "insert-tools"
-version = "1.0.0"
-description = "🧩 Безопасная вставка SELECT-запросов в ClickHouse с валидацией схемы"
+version = "1.0.1"
+description = "🧩 Safe insertion of SELECT queries into ClickHouse with schema validation"
 readme = "README.md"
-license = { text = "MIT" }
+license = { file = "LICENSE_NONCOMMERCIAL.md" }
 authors = [{ name = "castengine", email = "k.n.gorelov@gmail.com" }]
+requires-python = ">=3.8"
+
 dependencies = [
     "clickhouse-connect>=0.6.5",
     "pydantic>=1.10.0",
     "python-dotenv>=1.0.0",
     "pyyaml>=6.0"
 ]
-requires-python = ">=3.8"
+
+classifiers = [
+    "License :: Other/Proprietary License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent"
+]
 
 [project.urls]
 Homepage = "https://github.com/castengine/insert-tools"
